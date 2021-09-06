@@ -18,5 +18,22 @@ Per avviarelo usare il comando `python3 run_All.py` seguito dai segueti parametr
 
 `--output /home/Software/Algobio/Gruppo1/Datasets/ --verbose -f /home/Software/Algobio/Gruppo1/Datasets/Rhodobacter_frag.fastq 
 -k 31 -D Rhodobacter_frag_k31_t5e-6 -p /home/Software/Algobio/SPRISS -t 5e-6`
+## Output
+
+Verrà creata una directory principale con il nome del dataset. All'interno sarà presente la 
+directory Graph con tutti i risultati prodotti. Sempre nella stessa directory per ogni tool
+viene creata una directory contenenti file prodotti dal tools e elaborazioni del nostro tools
+Il file log_exec_result_[nomedataset].txt conterrà tutti i tempi rilevati.
+
+Sono previste 6 step:
+-1 Conteggio KMC
+-2 Conteggio Sakeima
+-3 Conteggio SPRISS
+-4 Conteggio Kmergenie-ntCard
+-5 Elaborazione e creazione Grafici
+
+Nella directory dove viene creata la directory principale del dataset viene aggiornato 
+progress_[datasetname].txt file per gestire le ripartenze. Deve contenere l'ultima fase 
+da considerare completata, riparte da quella successiva.
 
 Per ulteriori parametri eseguire `python3 run_All.py -h` per ottenere l'help
