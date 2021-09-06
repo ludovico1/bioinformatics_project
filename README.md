@@ -26,11 +26,11 @@ viene creata una directory contenenti file prodotti dal tools e elaborazioni del
 Il file log_exec_result_[nomedataset].txt conterrà tutti i tempi rilevati.
 
 Sono previste 6 step:
--1 Conteggio KMC
--2 Conteggio Sakeima
--3 Conteggio SPRISS
--4 Conteggio Kmergenie-ntCard
--5 Elaborazione e creazione Grafici
+- 1 Conteggio KMC
+- 2 Conteggio Sakeima
+- 3 Conteggio SPRISS
+- 4 Conteggio Kmergenie-ntCard
+- 5 Elaborazione e creazione Grafici
 
 Nella directory dove viene creata la directory principale del dataset viene aggiornato 
 progress_[datasetname].txt file per gestire le ripartenze. Deve contenere l'ultima fase 
